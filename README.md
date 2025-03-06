@@ -147,11 +147,11 @@ More information about **CardBranch** on [https://github.com/johnnydldev/reactCl
 
 
 > [!TIP]
-> The implementation of **CardBranch** you can do it the follow way:
+> The implementation of **CardEmployee** you can do it the follow way:
 
 ```javascript
     //Import the component with follow sentence above the main component with you've been work
-    import CardBranch from './card_item/card_branch/CardBranch.js';
+    import CardEmployee from './card_item/card_employee/CardEmployee.js';
 
     //Add the component with next tag shown
     //The container of main components and CardEmployee <div> </div>

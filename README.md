@@ -82,11 +82,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+
 > [!IMPORTANT]
 > About the **CardBranch**, **CardEmployee**, and **LinkButton** components 
 
+
 > [!TIP]
-> The implementation of **LInkButton** you can do it the follow way:
+> The implementation of **LinkButton** you can do it the follow way:
 
 ```javascript
     //Import the component with follow sentence above the main component with you've been work
@@ -105,3 +107,78 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ```
 More information about **LinkButton** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/link_button](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/link_button)
+
+
+> [!TIP]
+> The implementation of **CardBranch** you can do it the follow way:
+
+```javascript
+    //Import the component with follow sentence above the main component with you've been work
+    import CardBranch from './card_item/card_branch/CardBranch.js';
+
+    //Add the component with next tag shown
+    //The container of main components and CardEmployee <div> </div>
+     <div className="App">
+      <header className="App-header">
+      </header>
+
+        //The CardBranch has the next properties: title, buttons (array) this use the map function 
+        // to create a LinkButton according to parameters passed to property. 
+        
+        //If none parameters is passed, this use the default values. 
+        <CardBranch title={'Card Example'} buttons={
+          [{
+            enable: true,
+            text: 'Edit',
+            url: './notFound'
+          },
+          {
+            enable: false,
+            text: 'Delete',
+            url: './notFound'
+          }]
+        } />
+
+    </div>
+
+```
+More information about **CardBranch** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/card_item/card_branch](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/card_item/card_branch)
+
+
+
+> [!TIP]
+> The implementation of **CardBranch** you can do it the follow way:
+
+```javascript
+    //Import the component with follow sentence above the main component with you've been work
+    import CardBranch from './card_item/card_branch/CardBranch.js';
+
+    //Add the component with next tag shown
+    //The container of main components and CardEmployee <div> </div>
+     <div className="App">
+      <header className="App-header">
+        
+      </header>
+
+        //The CardEmployee has the next properties: name, age, genre, work_description, branch, and 
+        // buttons (array) this use the map function 
+        // to create a LinkButton according to parameters passed to property.  
+
+        //If none parameters is passed, this use the default values.
+        <CardEmployee buttons={
+          [{
+            enable: true,
+            text: 'Edit',
+            url: './notFound'
+          },
+          {
+            enable: false,
+            text: 'Delete',
+            url: './notFound'
+          }]
+        } />
+
+    </div>
+
+```
+More information about **CardEmployee** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/card_item/card_employee](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/card_item/card_employee)

@@ -23,7 +23,7 @@ function App() {
             url: './notFound'
           }]
         } />
-
+        
         <CardEmployee buttons={
           [{
             enable: true,

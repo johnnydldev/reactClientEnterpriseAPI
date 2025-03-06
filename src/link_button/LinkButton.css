@@ -1,0 +1,22 @@
+
+
+.Linkbutton-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 1px;
+    background-color: #6A9C89;
+    border-radius: 10px;
+}
+
+.Linkbutton-item{
+    text-decoration: none;
+    color: white;
+    margin: 4px;
+}
+
+.Linkbutton-item:hover{
+    text-decoration: line-through;
+    text-decoration-color: blueviolet;
+}

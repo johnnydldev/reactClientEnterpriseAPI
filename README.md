@@ -104,5 +104,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     </>
 
 ```
-
-## more information about **LinkButton** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/link_button](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/link_button)
+More information about **LinkButton** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/link_button](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/link_button)

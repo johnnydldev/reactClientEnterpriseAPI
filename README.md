@@ -33,7 +33,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-> [!WARNING]
+> [!CAUTION]
 ### `npm run eject`
 
 > [!NOTE]
@@ -45,7 +45,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-> [!TIP]
+> [!IMPORTANT]
 > ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
@@ -81,3 +81,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 > ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+> [!IMPORTANT]
+> About the **CardBranch**, **CardEmployee**, and **LinkButton** components 
+
+> [!TIP]
+> The implementation of **LInkButton** you can do it the follow way:
+
+```javascript
+    //Import the component with follow sentence above the main component with you've been work
+    import LinkButton from '../../link_button/LinkButton.js';
+
+    //Add the component with next tag shown
+    //The container of main component and LinkButton <> </>
+    <> 
+        //The navigation tag to header (main component)
+        <nav className="nav-main-item">
+            //LinkButton component, this need the next properties: enable, text and url
+            //If none doesn't gave to component, this use the default properties.
+            <LinkButton enable= {true} text={'Home'} url={'/Home/AllViews'}></LinkButton>
+        </nav>
+    </>
+
+```
+
+## more information about **LinkButton** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/link_button](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/link_button)

@@ -95,11 +95,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     //Add the component with next tag shown
     //The container of main component and LinkButton <> </>
     <> 
-        //The navigation tag to header (main component)
+        <!-- The navigation tag to header (main component) -->
         <nav className="nav-main-item">
-            //LinkButton component, this need the next properties: enable, text and url
-            //If none doesn't gave to component, this use the default properties.
-            <LinkButton enable= {true} text={'Home'} url={'/Home/AllViews'}></LinkButton>
+            <!-- LinkButton component, this need the next properties: enable, text and url -->
+            <!-- If none doesn't gave to component, this use the default properties. -->
+            <LinkButton enable= {true} text={'Home'} url={'/Home/AllViews'} />
         </nav>
     </>
 

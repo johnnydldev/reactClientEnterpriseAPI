@@ -19,7 +19,7 @@ export default function CardEmployee({
             <label>{branch}</label>
 
             {buttons.map((item) => (
-                <LinkButton enable={item.enable} text={item.text} url={item.url} />
+                <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action}/>
             ))}
  
         </>

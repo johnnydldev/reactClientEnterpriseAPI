@@ -11,7 +11,7 @@ export default function CardBranch({
             <label>{title}</label>
 
             {buttons.map((item) => (
-                <LinkButton enable={item.enable} text={item.text} url={item.url} />
+                <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
             ))}
  
         </>

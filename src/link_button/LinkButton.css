@@ -1,22 +1,66 @@
 
 
-.Linkbutton-container{
+.Linkbutton-link-container, 
+.Linkbutton-edit-container, 
+.Linkbutton-delete-container,
+.Linkbutton-submit-container,
+.Linkbutton-back-container{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5px;
     padding: 1px;
-    background-color: #6A9C89;
-    border-radius: 10px;
+    background-color: #ffffff00;
+    border: 0px;
 }
 
-.Linkbutton-item{
+.Linkbutton-edit-container{
+    background-color: #db9377;
+}
+
+.Linkbutton-delete-container{
+    background-color: #a6677e;
+}
+
+.Linkbutton-submit-container{
+    background-color: #51745e;
+}
+
+.Linkbutton-back-container{
+    background-color: #798184;
+}
+
+.Linkbutton-link-item, 
+.Linkbutton-edit-item,
+.Linkbutton-delete-item,
+.Linkbutton-submit-item, 
+.Linkbutton-back-item{
     text-decoration: none;
-    color: white;
+    color: #132019;
     margin: 4px;
+    font-weight: bold;
 }
 
-.Linkbutton-item:hover{
-    text-decoration: line-through;
-    text-decoration-color: blueviolet;
+.Linkbutton-edit-item, 
+.Linkbutton-delete-item,
+.Linkbutton-submit-item, 
+.Linkbutton-back-item {
+    color: #fff;
 }
+
+.Linkbutton-link-item:hover, 
+.Linkbutton-edit-item:hover, 
+.Linkbutton-delete-item:hover, 
+.Linkbutton-submit-item:hover, 
+.Linkbutton-back-item:hover{
+    text-decoration: line-through;
+    text-decoration-color: #a6677e;
+}
+
+.Linkbutton-edit-item:hover, 
+.Linkbutton-delete-item:hover,
+.Linkbutton-submit-item:hover, 
+.Linkbutton-back-item:hover{
+    text-decoration-color: #644e49;
+}
+

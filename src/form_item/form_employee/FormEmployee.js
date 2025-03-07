@@ -10,8 +10,8 @@ export default function FormEmployee({
 }){
 
     return(
-        <>
-            <form>
+        <div className="Form-main-container">
+            <form className="Form-container" >
 
                 <label>{name}</label>
                 <input type="text" placeholder={"Add the "+name}></input>
@@ -25,11 +25,14 @@ export default function FormEmployee({
                 <label>{work_description_title}</label>
                 <input type="text" placeholder={"Add the "+work_description_title}></input>
 
-                {buttons.map( item =>(
-                    <LinkButton enable={item.enable} text={item.text} url={item.url} />
-                ))}
+                <div className="Buttons-container">
+                    {buttons.map( item =>(
+                        <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
+                    ))}
+                </div>
+
             </form>
-        </>
+        </div>
     );
 
 }

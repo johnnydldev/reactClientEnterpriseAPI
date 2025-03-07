@@ -11,18 +11,22 @@ import FormEmployee from './form_item/form_employee/FormEmployee.js';
 function App() {
   return (
     <div className="App">
+
       <header className="App-header">
         <LinkButton enable={true} text={'Home'} url={'/Home/AllViews'}/>
+
         <CardBranch title={'Card Example'} buttons={
           [{
             enable: true,
             text: 'Edit',
-            url: './notFound'
+            url: './notFound',
+            action: 'edit'
           },
           {
             enable: false,
             text: 'Delete',
-            url: './notFound'
+            url: './notFound',
+            action: 'delete'
           }]
         } />
         
@@ -30,48 +34,61 @@ function App() {
           [{
             enable: true,
             text: 'Edit',
-            url: './notFound'
+            url: './notFound',
+            action: 'edit'
           },
           {
             enable: false,
             text: 'Delete',
-            url: './notFound'
+            url: './notFound',
+            action: 'delete'
           }]
         } />
 
       </header>
 
-      <FormBranch title={'Branch Name'} buttons={
-        [
-          {
-            enable: false,
-            text: 'Submit',
-            url: './NotFound'
-          },
-          {
-            enable: true,
-            text: 'Back home',
-            url: './NotFound'
-          }
-        ]}
-      />
+       <section className="App-section">
+       <FormBranch title={'Branch Name'} buttons={
+          [
+            {
+              enable: false,
+              text: 'Submit',
+              url: './NotFound',
+              action: 'submit'
+            },
+            {
+              enable: true,
+              text: 'Back home',
+              url: './NotFound',
+              action: 'back'
+            }
+          ]}
+        />
 
-      <FormEmployee  buttons={
-        [
-          {
-            enable: false,
-            text: 'Submit',
-            url: './NotFound'
-          },
-          {
-            enable: true,
-            text: 'Back home',
-            url: './NotFound'
-          }
-        ]}
-      />
+        <FormEmployee  buttons={
+          [
+            {
+              enable: false,
+              text: 'Submit',
+              url: './NotFound',
+              action: 'submit'
+            },
+            {
+              enable: true,
+              text: 'Back home',
+              url: './NotFound',
+              action: 'back'
+            }
+          ]}
+        />
+       </section>
+
+      <footer className="App-footer">
+
+      </footer>
 
     </div>
+
   );
 }
 

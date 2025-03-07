@@ -1,7 +1,7 @@
 > [!IMPORTANT]
 > ## About the LinkButton component
-
-This component has several button types to work that are styled by the CSS class according
+>
+>This component has several button types to work that are styled by the CSS class according
 which is selected on its called and declaring, if you not specified none **button type specific** 
 the **LinkButton** load the **link** button style by default. Follow show the different types of
 buttons.
@@ -9,8 +9,7 @@ buttons.
 
 > [!TIP]
 > ## To use the default LinkButton you should only called the component the follow way:
-
-```javascript
+> ```javascript
     import LinkButton from '../link_button/LinkButton.js';
 
     <>
@@ -25,8 +24,7 @@ More information on next link:[LinkButton JS component](https://github.com/johnn
 
 > [!TIP]
 > ## To use the edit LinkButton styled you should only called the component the follow way:
-
-```javascript
+> ```javascript
     import LinkButton from '../link_button/LinkButton.js';
 
     <>
@@ -34,15 +32,14 @@ More information on next link:[LinkButton JS component](https://github.com/johnn
     </>
 
 ```
-![Image of default LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Edit.jpeg)
+![Image of edit LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Edit.jpeg)
 
 More information on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/LinkButton.js)
 
 
 > [!TIP]
 > ## To use the delete LinkButton styled you should only called the component the follow way:
-
-```javascript
+> ```javascript
     import LinkButton from '../link_button/LinkButton.js';
 
     <>
@@ -50,15 +47,14 @@ More information on next link:[LinkButton JS component](https://github.com/johnn
     </>
 
 ```
-![Image of default LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Delete.jpeg)
+![Image of delete LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Delete.jpeg)
 
 More information on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/LinkButton.js)
 
 
 > [!TIP]
 > ## To use the submit LinkButton styled you should only called the component the follow way:
-
-```javascript
+> ```javascript
     import LinkButton from '../link_button/LinkButton.js';
 
     <>
@@ -66,15 +62,14 @@ More information on next link:[LinkButton JS component](https://github.com/johnn
     </>
 
 ```
-![Image of default LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Submit.jpeg)
+![Image of submit LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Submit.jpeg)
 
 More information on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/LinkButton.js)
 
 
 > [!TIP]
 > ## To use the back LinkButton styled you should only called the component the follow way:
-
-```javascript
+> ```javascript
     import LinkButton from '../link_button/LinkButton.js';
 
     <>
@@ -82,15 +77,14 @@ More information on next link:[LinkButton JS component](https://github.com/johnn
     </>
 
 ```
-![Image of default LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Back.jpeg)
+![Image of back LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Back.jpeg)
 
 More information on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/LinkButton.js)
 
 
 > [!TIP]
 > ## To use the info LinkButton styled you should only called the component the follow way:
-
-```javascript
+> ```javascript
     import LinkButton from '../link_button/LinkButton.js';
 
     <>
@@ -98,6 +92,6 @@ More information on next link:[LinkButton JS component](https://github.com/johnn
     </>
 
 ```
-![Image of default LinkButton component]()
+![Image of info LinkButton component]()
 
 More information on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/LinkButton.js)

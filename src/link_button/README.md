@@ -9,14 +9,16 @@ buttons.
 
 > [!TIP]
 > ## To use the default LinkButton you should only called the component the follow way:
+>
 > ```javascript
-    import LinkButton from '../link_button/LinkButton.js';
+>    import LinkButton from '../link_button/LinkButton.js';
+>
+>   <>
+>       <LinkButton enable={true} text={'Hola'} url={'./Home/Allviews'} />
+>   </>
+>
+> ```
 
-    <>
-        <LinkButton enable={true} text={'Hola'} url={'./Home/Allviews'} />
-    </>
-
-```
 ![Image of default LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Link.jpeg)
 
 More information on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/LinkButton.js)
@@ -24,14 +26,16 @@ More information on next link:[LinkButton JS component](https://github.com/johnn
 
 > [!TIP]
 > ## To use the edit LinkButton styled you should only called the component the follow way:
+>
 > ```javascript
-    import LinkButton from '../link_button/LinkButton.js';
+>   import LinkButton from '../link_button/LinkButton.js';
+>
+>   <>
+>       <LinkButton enable={true} text={'edit'} url={'./some-rute'} action={'edit'} />
+>   </>
+>
+> ```
 
-    <>
-        <LinkButton enable={true} text={'edit'} url={'./some-rute'} action={'edit'} />
-    </>
-
-```
 ![Image of edit LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Edit.jpeg)
 
 More information on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/LinkButton.js)
@@ -39,14 +43,16 @@ More information on next link:[LinkButton JS component](https://github.com/johnn
 
 > [!TIP]
 > ## To use the delete LinkButton styled you should only called the component the follow way:
+>
 > ```javascript
-    import LinkButton from '../link_button/LinkButton.js';
+>    import LinkButton from '../link_button/LinkButton.js';
+>
+>   <>
+>       <LinkButton enable={true} text={'delete'} url={'./some-rute'} action={'delete'} />
+>   </>
+>
+> ```
 
-    <>
-        <LinkButton enable={true} text={'delete'} url={'./some-rute'} action={'delete'} />
-    </>
-
-```
 ![Image of delete LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Delete.jpeg)
 
 More information on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/LinkButton.js)
@@ -54,14 +60,16 @@ More information on next link:[LinkButton JS component](https://github.com/johnn
 
 > [!TIP]
 > ## To use the submit LinkButton styled you should only called the component the follow way:
+>
 > ```javascript
-    import LinkButton from '../link_button/LinkButton.js';
+>   import LinkButton from '../link_button/LinkButton.js';
+>
+>    <>
+>       <LinkButton enable={true} text={'Submit'} url={'./some-rute'} action={'submit'} />
+>   </>
+>
+> ```
 
-    <>
-        <LinkButton enable={true} text={'Submit'} url={'./some-rute'} action={'submit'} />
-    </>
-
-```
 ![Image of submit LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Submit.jpeg)
 
 More information on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/LinkButton.js)
@@ -69,14 +77,16 @@ More information on next link:[LinkButton JS component](https://github.com/johnn
 
 > [!TIP]
 > ## To use the back LinkButton styled you should only called the component the follow way:
+>
 > ```javascript
-    import LinkButton from '../link_button/LinkButton.js';
+>   import LinkButton from '../link_button/LinkButton.js';
+>
+>   <>
+>       <LinkButton enable={true} text={'Back'} url={'./some-rute'} action={'back'} />
+>   </>
+>
+> ```
 
-    <>
-        <LinkButton enable={true} text={'Back'} url={'./some-rute'} action={'back'} />
-    </>
-
-```
 ![Image of back LinkButton component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/rendering_snapshots/LinkButton_Style_Back.jpeg)
 
 More information on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/LinkButton.js)
@@ -84,14 +94,16 @@ More information on next link:[LinkButton JS component](https://github.com/johnn
 
 > [!TIP]
 > ## To use the info LinkButton styled you should only called the component the follow way:
+>
 > ```javascript
-    import LinkButton from '../link_button/LinkButton.js';
+>   import LinkButton from '../link_button/LinkButton.js';
+>
+>   <>
+>       <LinkButton enable={true} text={'About us'} url={'./some-rute'} action={'info'} />
+>   </>
+>
+> ```
 
-    <>
-        <LinkButton enable={true} text={'About us'} url={'./some-rute'} action={'info'} />
-    </>
-
-```
 ![Image of info LinkButton component]()
 
 More information on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/LinkButton.js)

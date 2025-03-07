@@ -99,9 +99,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     <> 
         <!-- The navigation tag to header (main component) -->
         <nav className="nav-main-item">
-            <!-- LinkButton component, this need the next properties: enable, text and url -->
+            <!-- LinkButton component, this need the next properties: enable, text, url and action (several options) when you use the proprty action you can choose the next options to button types: edit, submit, link (default), delete, and info -->
             <!-- If none doesn't gave to component, this use the default properties. -->
-            <LinkButton enable= {true} text={'Home'} url={'/Home/AllViews'} />
+            <LinkButton enable= {true} text={'Home'} url={'/Home/AllViews'} action={'edit'} />
         </nav>
     </>
 
@@ -130,12 +130,14 @@ More information about **LinkButton** on [https://github.com/johnnydldev/reactCl
           [{
             enable: true,
             text: 'Edit',
-            url: './notFound'
+            url: './notFound',
+            action: 'edit'
           },
           {
             enable: false,
             text: 'Delete',
-            url: './notFound'
+            url: './notFound',
+            action: 'delete'
           }]
         } />
 
@@ -169,12 +171,14 @@ More information about **CardBranch** on [https://github.com/johnnydldev/reactCl
           [{
             enable: true,
             text: 'Edit',
-            url: './notFound'
+            url: './notFound',
+            action: 'edit'
           },
           {
             enable: false,
             text: 'Delete',
-            url: './notFound'
+            url: './notFound',
+            action: 'delete'
           }]
         } />
 

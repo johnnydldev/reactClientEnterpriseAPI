@@ -1,3 +1,18 @@
+:root{
+  --default-color: #222b27;
+  --peach-color: #db9377;
+  --purple-color: #a6677e;
+  --green-color: #51745e;
+  --gray-color: #798184;
+  --kabul-color: #644e49;
+  --white-color: #fff;
+  --beige-color: #ead9c2;
+  --transparent-color: #ffffff00;
+  --arrowtown-color: #92826b;
+  --huricane-color: #938381;
+  --viridian-color: #459682;
+}
+
 .App {
  
 }

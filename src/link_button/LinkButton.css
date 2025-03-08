@@ -10,24 +10,24 @@
     justify-content: center;
     margin: 5px;
     padding: 1px;
-    background-color: #ffffff00;
+    background-color: var( --transparent-color);
     border: 0px;
 }
 
 .Linkbutton-edit-container{
-    background-color: #db9377;
+    background-color: var(--peach-color);
 }
 
 .Linkbutton-delete-container{
-    background-color: #a6677e;
+    background-color: var(--purple-color);
 }
 
 .Linkbutton-submit-container{
-    background-color: #51745e;
+    background-color: var(--green-color);
 }
 
 .Linkbutton-back-container{
-    background-color: #798184;
+    background-color: var(--gray-color);
 }
 
 .Linkbutton-link-item, 
@@ -36,7 +36,7 @@
 .Linkbutton-submit-item, 
 .Linkbutton-back-item{
     text-decoration: none;
-    color: #132019;
+    color: var(--default-color);
     margin: 4px;
     font-weight: bold;
 }
@@ -45,7 +45,7 @@
 .Linkbutton-delete-item,
 .Linkbutton-submit-item, 
 .Linkbutton-back-item {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .Linkbutton-link-item:hover, 
@@ -54,13 +54,13 @@
 .Linkbutton-submit-item:hover, 
 .Linkbutton-back-item:hover{
     text-decoration: line-through;
-    text-decoration-color: #a6677e;
+    text-decoration-color: var(--purple-color);
 }
 
 .Linkbutton-edit-item:hover, 
 .Linkbutton-delete-item:hover,
 .Linkbutton-submit-item:hover, 
 .Linkbutton-back-item:hover{
-    text-decoration-color: #644e49;
+    text-decoration-color: var(--kabul-color);
 }
 

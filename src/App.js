@@ -48,39 +48,15 @@ function App() {
       </header>
 
        <section className="App-section">
-       <FormBranch title={'Branch Name'} buttons={
-          [
-            {
-              enable: false,
-              text: 'Submit',
-              url: './NotFound',
-              action: 'submit'
-            },
-            {
-              enable: true,
-              text: 'Back home',
-              url: './NotFound',
-              action: 'back'
-            }
-          ]}
-        />
+       <FormBranch inputs={[
+        {
+          text: 'Nombre de la Marca',
+          type: 'text'
+        }
+       ]}/>
 
-        <FormEmployee  buttons={
-          [
-            {
-              enable: false,
-              text: 'Submit',
-              url: './NotFound',
-              action: 'submit'
-            },
-            {
-              enable: true,
-              text: 'Back home',
-              url: './NotFound',
-              action: 'back'
-            }
-          ]}
-        />
+        <FormEmployee  />
+
        </section>
 
       <footer className="App-footer">

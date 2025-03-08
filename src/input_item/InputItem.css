@@ -1,0 +1,24 @@
+
+
+.Label-default-by-item{
+    margin: 5px 0px 2px 0px;
+    padding: 2px;
+    color: var(--default-color);
+    font-weight: bold;
+}
+
+.Input-default-by-item{
+    margin: 0px 0px 10px 0px;
+    padding: 2px;
+    border: none;
+    border-bottom: 2px solid var(--default-color);
+    width: 100%;
+}
+
+.Input-default-by-item:focus{
+    outline: none;
+    border-bottom: 2px solid var(--green-color);
+}
+
+
+

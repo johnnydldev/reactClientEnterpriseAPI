@@ -1,29 +1,46 @@
 import './FormEmployee.css';
 import LinkButton from '../../link_button/LinkButton.js'; 
+import InputItem from '../../input_item/InputItem.js';
 
 export default function FormEmployee({
-    name = 'Employee name',
-    age_title = 'Employee age',
-    genre_title = 'Employee genre',
-    work_description_title = 'Employee work description', 
-    buttons = []
+    inputs =[{
+        text: 'Employee name',
+        type: 'text'
+    },
+    {
+        text: 'Employee age',
+        type: 'text'
+    },
+    {
+        text: 'Employee genre',
+        type: 'text'
+    },
+    {
+        text: 'Employee work description',
+        type: 'text'
+    }],
+
+    buttons = [{
+        enable: false,
+        text: 'Submit',
+        url: './notfound',
+        action: 'submit'
+    },
+    {
+        enable: false,
+        text: 'Back Home',
+        url: './notfound',
+        action: 'back'
+    }]
 }){
 
     return(
         <div className="Form-main-container">
             <form className="Form-container" >
 
-                <label>{name}</label>
-                <input type="text" placeholder={"Add the "+name}></input>
-                
-                <label>{age_title}</label>
-                <input type="number" placeholder={"Add the "+age_title}></input>
-                
-                <label>{genre_title}</label>
-                <input type="text" placeholder={"Add the "+genre_title}></input>
-
-                <label>{work_description_title}</label>
-                <input type="text" placeholder={"Add the "+work_description_title}></input>
+                {inputs.map(item => (
+                    <InputItem text={item.text} type={item.type} />
+                ))}
 
                 <div className="Buttons-container">
                     {buttons.map( item =>(

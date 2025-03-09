@@ -1,20 +1,29 @@
 import './CardBranch.css';
 import LinkButton from '../../link_button/LinkButton.js';
+import LabelItem from '../../label_item/LabelItem.js';
 
 export default function CardBranch({
-    title = 'something',
+    labels = [{
+        title: 'Title',
+        text: 'Some Text'
+    }],
     buttons = []
 }){
 
     return(
-        <>
-            <label>{title}</label>
+        <div className="glass-morphysm card-container">
 
-            {buttons.map((item) => (
-                <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
+            {labels.map((item)=>(
+                <LabelItem title={item.title} text={item.text} />
             ))}
+
+            <div className="buttons-container horizontal-align">
+                {buttons.map((item) => (
+                    <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
+                ))}
+            </div>
  
-        </>
+        </div>
     );
 
 }

@@ -14,9 +14,20 @@ function App() {
     <div className="App">
 
       <header className="App-header">
-        <LinkButton enable={true} text={'Home'} url={'/Home/AllViews'}/>
+        <LinkButton enable={true} text={'Home'} url={'/Home/AllViews'} />
 
-        <CardBranch title={'Card Example'} buttons={
+        <CardBranch 
+        
+        labels={
+          [
+            {
+              title: 'Branch Name',
+              text: 'Coca cola'
+            }
+          ]
+        } 
+        
+        buttons={
           [{
             enable: true,
             text: 'Edit',

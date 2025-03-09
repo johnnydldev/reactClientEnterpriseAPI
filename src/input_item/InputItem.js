@@ -14,8 +14,6 @@ export default function InputItem({
     const arrayColors = ['default', 'red', 'green', 'purple', 'peach'];
     const colorExists = arrayColors.some((item) => item === color);
 
-    console.log(colorExists);
-
     if(colorExists){
         return(
             <>

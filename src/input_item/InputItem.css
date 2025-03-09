@@ -1,24 +1,72 @@
 
-
-.Label-default-by-item{
-    margin: 5px 0px 2px 0px;
-    padding: 2px;
-    color: var(--default-color);
-    font-weight: bold;
-}
-
-.Input-default-by-item{
+.input-spacing{
     margin: 0px 0px 10px 0px;
     padding: 2px;
     border: none;
-    border-bottom: 2px solid var(--default-color);
     width: 100%;
 }
 
-.Input-default-by-item:focus{
-    outline: none;
+.label-spacing{
+    margin: 5px 0px 2px 0px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.label-default-by-item{
+    color: var(--default-color);
+}
+
+.label-green-by-item{
+    color: var(--green-color);
+}
+
+.label-peach-by-item{
+    color: var(--peach-color);
+}
+
+.label-purple-by-item{
+    color: var(--purple-color);
+}
+
+.label-red-by-item{
+    color: var(--red-color);
+}
+
+.input-default-by-item{
+    border-bottom: 2px solid var(--default-color);
+}
+
+.input-green-by-item{
     border-bottom: 2px solid var(--green-color);
 }
 
+.input-peach-by-item{
+    border-bottom: 2px solid var(--peach-color);
+}
+
+.input-purple-by-item{
+    border-bottom: 2px solid var(--purple-color);
+}
+
+.input-red-by-item{
+    border-bottom: 2px solid var(--red-color);
+}
+
+.input-default-by-item:focus{
+    outline: none;
+    border-bottom: 2px solid var(--viridian-color);
+}
+
+.input-green-by-item:focus,
+.input-peach-by-item:focus,
+.input-purple-by-item:focus{
+    outline: none;
+    border-bottom: 2px solid var(--kabul-color);
+}
+
+.input-red-by-item:focus{
+    outline: none;
+    border-bottom: 2px solid var(--red-color);
+}
 
 

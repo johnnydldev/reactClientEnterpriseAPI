@@ -1,4 +1,5 @@
 import './FormEmployee.css';
+import '../../SharedStylesComponents.css';
 import LinkButton from '../../link_button/LinkButton.js'; 
 import InputItem from '../../input_item/InputItem.js';
 
@@ -35,20 +36,22 @@ export default function FormEmployee({
 }){
 
     return(
-        <div className="Form-main-container">
-            <form className="Form-container" >
+        <div className="form-container glass-morphysm horizontal-align">
+
+            <form className="form-items-container vertical-align" >
 
                 {inputs.map(item => (
                     <InputItem text={item.text} type={item.type} />
                 ))}
 
-                <div className="Buttons-container">
+                <div className="buttons-container horizontal-align">
                     {buttons.map( item =>(
                         <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
                     ))}
                 </div>
 
             </form>
+            
         </div>
     );
 

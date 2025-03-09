@@ -1,4 +1,5 @@
 import './FormBranch.css';
+import '../../SharedStylesComponents.css';
 import LinkButton from '../../link_button/LinkButton.js'; 
 import InputItem from '../../input_item/InputItem.js';
 
@@ -6,7 +7,8 @@ export default function FormBranch({
     inputs = [
     {
         text: 'Branch Name',
-        type: 'text'
+        type: 'text',
+        color: 'default'
     },
     ],
     buttons = [
@@ -26,15 +28,15 @@ export default function FormBranch({
 }){
 
     return(
-        <div className="Form-main-container">
+        <div className="form-container glass-morphysm horizontal-align">
 
-            <form className="Form-container" method='Post'>
+            <form className="form-items-container vertical-align" method='Post'>
 
                 {inputs.map(item =>(
-                    <InputItem text={item.text} type={item.type} />
+                    <InputItem text={item.text} type={item.type} color={item.color}/>
                 ))}
 
-                <div className="Buttons-container">
+                <div className="buttons-container horizontal-align">
                     {buttons.map( item =>(
                         <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
                     ))}

@@ -1,0 +1,61 @@
+/* This styles are used on several components to styled its differents html elements.
+    You should be sure of import the SharedStylesComponents.css file once ever time 
+    when you use the custom components. Instead you should create the styles css yourself.  
+*/
+
+/* This variables are used to text and background color or another things into the components.*/
+:root{
+    --default-color: #222b27;
+    --peach-color: #db9377;
+    --purple-color: #a6677e;
+    --green-color: #51745e;
+    --gray-color: #798184;
+    --kabul-color: #644e49;
+    --white-color: #fff;
+    --beige-color: #ead9c2;
+    --transparent-color: #ffffff00;
+    --arrowtown-color: #92826b;
+    --huricane-color: #938381;
+    --viridian-color: #459682;
+    --red-color: #de0032;
+}
+
+/* This class permit you give the glass background by components.*/
+.glass-morphysm{
+    backdrop-filter: blur(2px) saturate(13%);
+    -webkit-backdrop-filter: blur(2px) saturate(13%);
+    background-color: rgb(183, 183, 166, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.horizontal-align{
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-align{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container{
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 250px;
+    padding: 10px;
+}
+
+.form-items-container{
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.buttons-container{
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+

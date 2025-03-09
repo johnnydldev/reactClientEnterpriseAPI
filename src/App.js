@@ -6,6 +6,7 @@ import CardBranch from './card_item/card_branch/CardBranch.js';
 import CardEmployee from './card_item/card_employee/CardEmployee.js';
 import FormBranch from './form_item/form_branch/FormBranch.js';
 import FormEmployee from './form_item/form_employee/FormEmployee.js';
+import './SharedStylesComponents.css';
 
 
 function App() {

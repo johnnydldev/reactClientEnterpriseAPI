@@ -4,7 +4,8 @@
 .Linkbutton-edit-container, 
 .Linkbutton-delete-container,
 .Linkbutton-submit-container,
-.Linkbutton-back-container{
+.Linkbutton-back-container,
+.Linkbutton-info-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,11 +31,16 @@
     background-color: var(--gray-color);
 }
 
+.Linkbutton-info-container{
+    background-color: var(--viridian-color);
+}
+
 .Linkbutton-link-item, 
 .Linkbutton-edit-item,
 .Linkbutton-delete-item,
 .Linkbutton-submit-item, 
-.Linkbutton-back-item{
+.Linkbutton-back-item,
+.Linkbutton-info-item{
     text-decoration: none;
     color: var(--default-color);
     margin: 4px;
@@ -44,7 +50,8 @@
 .Linkbutton-edit-item, 
 .Linkbutton-delete-item,
 .Linkbutton-submit-item, 
-.Linkbutton-back-item {
+.Linkbutton-back-item,
+.Linkbutton-info-item {
     color: var(--white-color);
 }
 
@@ -52,7 +59,8 @@
 .Linkbutton-edit-item:hover, 
 .Linkbutton-delete-item:hover, 
 .Linkbutton-submit-item:hover, 
-.Linkbutton-back-item:hover{
+.Linkbutton-back-item:hover,
+.Linkbutton-info-item:hover{
     text-decoration: line-through;
     text-decoration-color: var(--purple-color);
 }
@@ -60,7 +68,8 @@
 .Linkbutton-edit-item:hover, 
 .Linkbutton-delete-item:hover,
 .Linkbutton-submit-item:hover, 
-.Linkbutton-back-item:hover{
+.Linkbutton-back-item:hover,
+.Linkbutton-info-item:hover{
     text-decoration-color: var(--kabul-color);
 }
 

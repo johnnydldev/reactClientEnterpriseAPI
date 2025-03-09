@@ -1,0 +1,56 @@
+
+
+:is(.label-default-title,
+.label-green-title,
+.label-peach-title,
+.label-purple-title,
+.label-kabul-title,
+.label-gray-title,){
+    font-weight: bold;
+    color: var(--default-color);
+
+    &.label-green-title{
+        color: var(--green-color);
+    }
+
+    &.label-peach-title{
+        color: var(--peach-color);
+    }
+
+    &.label-purple-title{
+        color: var(--purple-color);
+    }
+
+    &.label-kabul-title{
+        color: var(--kabul-color);
+    }
+
+    &.label-gray-title{
+        color: var(--gray-color);
+    }
+
+}
+
+.label-default-item{
+    color: var(--default-color);
+}
+
+.label-green-item{
+    color: var(--green-color);
+}
+
+.label-peach-item{
+    color: var(--peach-color);
+}
+
+.label-purple-item{
+    color: var(--purple-color);
+}
+
+.label-kabul-item{
+    color: var(--kabul-color);
+}
+
+.label-gray-item{
+    color: var(--gray-color);
+}

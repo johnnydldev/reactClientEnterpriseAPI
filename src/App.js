@@ -22,7 +22,8 @@ function App() {
           [
             {
               title: 'Branch Name',
-              text: 'Coca cola'
+              text: 'Coca cola',
+              color: ''
             }
           ]
         } 

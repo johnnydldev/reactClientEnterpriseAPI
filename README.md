@@ -84,7 +84,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 > [!IMPORTANT]
-> About the **CardBranch**, **CardEmployee**, **LabelItem**, and **LinkButton** components 
+> About the **CardItem**, **LabelItem**, and **LinkButton** components 
 
 > [!TIP]
 > The implementation of **LabelItem** you can do it the follow way:
@@ -132,11 +132,11 @@ More information about **LinkButton** on [https://github.com/johnnydldev/reactCl
 
 
 > [!TIP]
-> The implementation of **CardBranch** you can do it the follow way:
+> The implementation of **CardItem** you can do it the follow way:
 
 ```javascript
     //Import the component with follow sentence above the main component with you've been work
-    import CardBranch from './card_item/card_branch/CardBranch.js';
+    import CardItem from './card_item/CardItem.js';
 
     //Add the component with next tag shown
     //The container of main components and CardEmployee <div> </div>
@@ -144,12 +144,13 @@ More information about **LinkButton** on [https://github.com/johnnydldev/reactCl
       <header className="App-header">
       </header>
 
-        //The CardBranch has the next properties: labels (array), buttons (array) those use the map function 
+        //The CardItem has the next properties: title, labels (array), buttons (array) those use the map function 
         // to create a LabelItem according to parameters passed to labels property. 
         // to create a LinkButton according to parameters passed to buttons property. 
         
         //If none parameters is passed, this use the default values. 
-        <CardBranch 
+        <CardItem
+        title={'Marca'}
 
         labels={
           [
@@ -178,47 +179,5 @@ More information about **LinkButton** on [https://github.com/johnnydldev/reactCl
     </div>
 
 ```
-More information about **CardBranch** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/card_item/card_branch](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/card_item/card_branch)
+More information about **CardItem** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/card_item](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/card_item)
 
-
-
-> [!TIP]
-> The implementation of **CardEmployee** you can do it the follow way:
-
-```javascript
-    //Import the component with follow sentence above the main component with you've been work
-    import CardEmployee from './card_item/card_employee/CardEmployee.js';
-
-    //Add the component with next tag shown
-    //The container of main components and CardEmployee <div> </div>
-     <div className="App">
-      <header className="App-header">
-        
-      </header>
-
-        //The CardEmployee has the next properties: labels, and 
-        // buttons (array) those use the map function 
-
-        // to create a LabelItem according to parameters passed to labels property. 
-        // to create a LinkButton according to parameters passed to buttons property. 
-
-        //If none parameters is passed, this use the default values.
-        <CardEmployee buttons={
-          [{
-            enable: true,
-            text: 'Edit',
-            url: './notFound',
-            action: 'edit'
-          },
-          {
-            enable: false,
-            text: 'Delete',
-            url: './notFound',
-            action: 'delete'
-          }]
-        } />
-
-    </div>
-
-```
-More information about **CardEmployee** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/card_item/card_employee](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/card_item/card_employee)

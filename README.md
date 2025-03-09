@@ -84,8 +84,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 > [!IMPORTANT]
-> About the **CardBranch**, **CardEmployee**, and **LinkButton** components 
+> About the **CardBranch**, **CardEmployee**, **LabelItem**, and **LinkButton** components 
 
+> [!TIP]
+> The implementation of **LabelItem** you can do it the follow way:
+
+```javascript
+    //Import the component with follow sentence above the main component with you've been work
+    import LabelItem from '../../label_item/LabelItem.js';
+
+    //Add the component with next tag shown
+    //The container of main component and LabelItem <> </>
+    <> 
+        <!-- The navigation tag to header (main component) -->
+        <div className="main-item">
+            <!-- LabelItem component, this need the next properties: title, text.
+            <!-- If none doesn't gave to component, this use the default properties. -->
+            <LabelItem title= {'Name'} text={'John'} />
+            <LabelItem title= {'Age'} text={'60 years old'} />
+            <LabelItem title= {'Genre'} text={'Male'} />
+        </div>
+    </>
+
+```
+More information about **LabelItem** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/label_item](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/label_item)
 
 > [!TIP]
 > The implementation of **LinkButton** you can do it the follow way:
@@ -122,11 +144,23 @@ More information about **LinkButton** on [https://github.com/johnnydldev/reactCl
       <header className="App-header">
       </header>
 
-        //The CardBranch has the next properties: title, buttons (array) this use the map function 
-        // to create a LinkButton according to parameters passed to property. 
+        //The CardBranch has the next properties: labels (array), buttons (array) those use the map function 
+        // to create a LabelItem according to parameters passed to labels property. 
+        // to create a LinkButton according to parameters passed to buttons property. 
         
         //If none parameters is passed, this use the default values. 
-        <CardBranch title={'Card Example'} buttons={
+        <CardBranch 
+
+        labels={
+          [
+            {
+              title: 'Branch Name',
+              text: 'Coca cola'
+            }
+          ]
+        }  
+        
+        buttons={
           [{
             enable: true,
             text: 'Edit',
@@ -162,9 +196,11 @@ More information about **CardBranch** on [https://github.com/johnnydldev/reactCl
         
       </header>
 
-        //The CardEmployee has the next properties: name, age, genre, work_description, branch, and 
-        // buttons (array) this use the map function 
-        // to create a LinkButton according to parameters passed to property.  
+        //The CardEmployee has the next properties: labels, and 
+        // buttons (array) those use the map function 
+
+        // to create a LabelItem according to parameters passed to labels property. 
+        // to create a LinkButton according to parameters passed to buttons property. 
 
         //If none parameters is passed, this use the default values.
         <CardEmployee buttons={

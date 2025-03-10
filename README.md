@@ -171,9 +171,12 @@ More information about **TextAreaItem** on [https://github.com/johnnydldev/react
     <> 
         <!-- The navigation tag to header (main component) -->
         <nav className="nav-main-item">
-            <!-- LinkButton component, this need the next properties: enable, text, url and action (several options) when you use the proprty action you can choose the next options to button types: edit, submit, link (default), delete, and info -->
+            <!-- LinkButton component, this need the next properties: enable, text, url and action (several options) when you use the property color you can choose the next options to button types: submit, edit, link(default), delete, back, and info -->
             <!-- If none doesn't gave to component, this use the default properties. -->
             <LinkButton enable= {true} text={'Home'} url={'/Home/AllViews'} action={'edit'} />
+            <LinkButton enable= {true} text={'Home'} url={'/Home/AllViews'} action={'delete'} />
+            <LinkButton enable= {true} text={'Home'} url={'/Home/AllViews'} action={'info'} />
+            <LinkButton enable= {true} text={'Home'} url={'/Home/AllViews'} />
         </nav>
     </>
 

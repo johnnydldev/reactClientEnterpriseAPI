@@ -3,8 +3,8 @@ import './App.css';
 import NotFound from './not_found/NotFound.js';
 import LinkButton from './link_button/LinkButton.js';
 import CardItem from './card_item/CardItem.js';
-import FormBranch from './form_item/form_branch/FormBranch.js';
-import FormEmployee from './form_item/form_employee/FormEmployee.js';
+import FormBranch from './form_item/FormItem.js';
+import FormEmployee from './form_item/FormItem.js';
 import './SharedStylesComponents.css';
 
 
@@ -34,13 +34,13 @@ function App() {
             enable: true,
             text: 'Edit',
             url: './notFound',
-            action: 'edit'
+            color: 'edit'
           },
           {
             enable: false,
             text: 'Delete',
             url: './notFound',
-            action: 'delete'
+            color: 'delete'
           }]
         } />
 
@@ -77,14 +77,39 @@ function App() {
       </header>
 
        <section className="App-section">
-       <FormBranch inputs={[
-        {
-          text: 'Nombre de la Marca',
-          type: 'text'
-        }
-       ]}/>
+       <FormBranch 
+        title = {'Branch Form'}
 
-        <FormEmployee  />
+        inputs={[
+          {
+            text: 'Nombre de la Marca',
+            type: 'text'
+          }
+        ]}
+       />
+
+        <FormEmployee  
+
+          inputs={[
+            {
+              text: 'Employee name',
+              type: 'text'
+            },
+            {
+                text: 'Employee age',
+                type: 'text'
+            },
+            {
+                text: 'Employee genre',
+                type: 'text'
+            },
+            {
+                text: 'Employee work description',
+                type: 'text'
+            }
+          ]}
+
+        />
 
        </section>
 

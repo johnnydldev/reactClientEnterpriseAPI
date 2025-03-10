@@ -1,5 +1,5 @@
 
-.input-spacing{
+.textarea-spacing{
     margin: 0px 0px 10px 0px;
     padding: 2px;
     border: none;
@@ -32,43 +32,49 @@
     color: var(--red-color);
 }
 
-.input-default-by-item{
+.textarea-default-by-item{
     border-bottom: 2px solid var(--default-color);
 }
 
-.input-green-by-item{
+.textarea-green-by-item{
     border-bottom: 2px solid var(--green-color);
 }
 
-.input-peach-by-item{
+.textarea-peach-by-item{
     border-bottom: 2px solid var(--peach-color);
 }
 
-.input-purple-by-item{
+.textarea-purple-by-item{
     border-bottom: 2px solid var(--purple-color);
 }
 
-.input-red-by-item{
+.textarea-red-by-item{
     border-bottom: 2px solid var(--red-color);
 }
 
-.input-default-by-item:focus{
+:is(.textarea-default-by-item,
+.textarea-green-by-item,
+.textarea-peach-by-item,
+.textarea-purple-by-item,
+.textarea-red-by-item){
+    resize: none;
     outline: none;
-    border-bottom: 2px solid var(--viridian-color);
 }
 
-:is(.input-green-by-item,
-.input-peach-by-item,
-.input-purple-by-item,
-.input-red-by-item):focus{
-    outline: none;
+:is(.textarea-default-by-item,
+.textarea-green-by-item,
+.textarea-peach-by-item,
+.textarea-purple-by-item,
+.textarea-red-by-item):focus{
     border-bottom: 2px solid var(--kabul-color);
 
-    &.input-red-by-item{
+    &.textarea-red-by-item{
         border-bottom: 2px solid var(--red-color);
     }
+
+    &.textarea-default-by-item{
+        border-bottom: 2px solid var(--viridian-color);
+    }
 }
-
-
 
 

@@ -2,7 +2,7 @@ import './CardItem.css';
 import LinkButton from '../link_button/LinkButton.js';
 import LabelItem from '../label_item/LabelItem.js';
 
-export default function CardBranch({
+export default function CardItem({
     title = 'Title Card',
     labels = [{
         title: 'Title',
@@ -13,13 +13,13 @@ export default function CardBranch({
         enable: true,
         text: 'Edit',
         url: './notFound',
-        action: 'edit'
+        color: 'edit'
       },
       {
         enable: false,
         text: 'Delete',
         url: './notFound',
-        action: 'delete'
+        color: 'delete'
     }]
 }){
 
@@ -34,7 +34,7 @@ export default function CardBranch({
 
             <div className="buttons-container horizontal-align">
                 {buttons.map((item) => (
-                    <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
+                    <LinkButton enable={item.enable} text={item.text} url={item.url} color={item.color} />
                 ))}
             </div>
  

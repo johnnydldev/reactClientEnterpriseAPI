@@ -1,4 +1,5 @@
 import './TextAreaItem.css';
+import {actionInput as ActionResult, colorInput as ColorResult} from '../../tools/ValidationInputColorsByUser.js';
 
 export default function TextAreaItem({
     text = 'Name textarea',
@@ -8,8 +9,7 @@ export default function TextAreaItem({
 }){
 
     color = color.toLowerCase();
-    const arrayColors = ['default', 'red', 'green', 'purple', 'peach'];
-    const colorExists = arrayColors.some((item) => item === color);
+    const colorExists = ColorResult(color);
 
     if(colorExists){
         return(

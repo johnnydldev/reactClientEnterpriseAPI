@@ -26,13 +26,13 @@ export default function FormItem({
         enable: false,
         text: 'Submit',
         url: './NotFound',
-        color: 'submit'
+        action: 'submit'
     },
     {
         enable: true,
         text: 'Back home',
         url: './NotFound',
-        color: 'back'
+        action: 'back'
     }    
     ]
 }){
@@ -54,7 +54,7 @@ export default function FormItem({
     
                     <div className="buttons-container horizontal-align">
                         {buttons.map( item =>(
-                            <LinkButton enable={item.enable} text={item.text} url={item.url} color={item.color} />
+                            <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
                         ))}
                     </div>
     
@@ -76,7 +76,7 @@ export default function FormItem({
 
                 <div className="buttons-container horizontal-align">
                     {buttons.map( item =>(
-                        <LinkButton enable={item.enable} text={item.text} url={item.url} color={item.color} />
+                        <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
                     ))}
                 </div>
 

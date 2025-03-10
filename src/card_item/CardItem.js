@@ -4,22 +4,24 @@ import LabelItem from '../label_item/LabelItem.js';
 
 export default function CardItem({
     title = 'Title Card',
+    
     labels = [{
         title: 'Title',
         text: 'Some Text',
         color: 'default'
     }],
+
     buttons = [{
         enable: true,
         text: 'Edit',
         url: './notFound',
-        color: 'edit'
+        action: 'edit'
       },
       {
         enable: false,
         text: 'Delete',
         url: './notFound',
-        color: 'delete'
+        action: 'delete'
     }]
 }){
 
@@ -34,7 +36,7 @@ export default function CardItem({
 
             <div className="buttons-container horizontal-align">
                 {buttons.map((item) => (
-                    <LinkButton enable={item.enable} text={item.text} url={item.url} color={item.color} />
+                    <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
                 ))}
             </div>
  

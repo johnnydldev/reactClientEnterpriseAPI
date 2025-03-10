@@ -34,19 +34,20 @@ function App() {
             enable: true,
             text: 'Edit',
             url: './notFound',
-            color: 'edit'
+            action: 'edit'
           },
           {
             enable: false,
             text: 'Delete',
             url: './notFound',
-            color: 'delete'
+            action: 'delete'
           }]
         } />
 
         <CardItem 
         
-        title ={'Empleado'}
+          title ={'Empleado'}
+
           labels={
             [
               {
@@ -57,17 +58,14 @@ function App() {
               {
                 title: 'Employee Age',
                 text: '200 years old',
-                color: ''
               },
               {
                 title: 'Employee Genre',
-                text: 'Alien',
-                color: ''
+                text: 'Alien'
               },
               {
                 title: 'Employee Work',
-                text: 'Developer',
-                color: ''
+                text: 'Developer'
               },
             ]
           } 
@@ -83,7 +81,8 @@ function App() {
         inputs={[
           {
             text: 'Nombre de la Marca',
-            type: 'text'
+            type: 'text',
+            color: ''
           }
         ]}
        />
@@ -93,7 +92,8 @@ function App() {
           inputs={[
             {
               text: 'Employee name',
-              type: 'text'
+              type: 'text',
+              color: ''
             },
             {
                 text: 'Employee age',

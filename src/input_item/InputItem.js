@@ -1,5 +1,6 @@
 
 import './InputItem.css';
+import {actionInput as ActionResult, colorInput as ColorResult} from '../tools/ValidationInputColorsByUser.js';
 
 
 export default function InputItem({
@@ -11,8 +12,7 @@ export default function InputItem({
 }){
     
     color = color.toLowerCase();
-    const arrayColors = ['default', 'red', 'green', 'purple', 'peach'];
-    const colorExists = arrayColors.some((item) => item === color);
+    const colorExists = ColorResult(color);
 
     if(colorExists){
         return(

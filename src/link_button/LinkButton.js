@@ -1,24 +1,24 @@
 //import {Link} from 'gatsby';
 import './LinkButton.css';
+import {actionInput as ActionResult, colorInput as ColorResult} from '../tools/ValidationInputColorsByUser.js';
 
 function LinkButton({
     enable = false,
     text = 'some link',
     url = 'none', 
-    color = 'link'
+    action = 'link'
 }){
     
-    color = color.toLowerCase();
+    action = action.toLowerCase();
     const textToUpper = text.toUpperCase();
-    const arrayActions = ['link', 'submit', 'edit', 'delete', 'info', 'back'];
-    const actionExists = arrayActions.some((item) => item === color);
+    const actionExists = ActionResult(action);
 
     if(enable && actionExists ){
 
         return(
             <>
-                <button className={"Linkbutton-"+color+"-container"} >
-                    <a className={"Linkbutton-"+color+"-item"} href={url}>{textToUpper}</a>
+                <button className={"Linkbutton-"+action+"-container"} >
+                    <a className={"Linkbutton-"+action+"-item"} href={url}>{textToUpper}</a>
                 </button>
             </>
         );
@@ -27,8 +27,8 @@ function LinkButton({
 
         return(
             <>
-                <button className={"Linkbutton-"+color+"-container"} disabled>
-                    <a className={"Linkbutton-"+color+"-item"} href={url}>{textToUpper}</a>
+                <button className={"Linkbutton-"+action+"-container"} disabled>
+                    <a className={"Linkbutton-"+action+"-item"} href={url}>{textToUpper}</a>
                 </button>
             </>
         );

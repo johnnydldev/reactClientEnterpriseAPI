@@ -1,4 +1,5 @@
 import './LabelItem.css';
+import {actionInput as ActionResult, colorInput as ColorResult} from '../tools/ValidationInputColorsByUser.js';
 
 export default function LabelItem({
     title = 'Title',
@@ -7,8 +8,7 @@ export default function LabelItem({
 }){
 
     color = color.toLowerCase();
-    const arrayColors = ['default', 'green', 'purple', 'peach', 'gray', 'kabul'];
-    const colorExists = arrayColors.some((item) => item === color);
+    const colorExists = ColorResult(color);
 
     if(colorExists){
         return(

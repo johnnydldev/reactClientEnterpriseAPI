@@ -1,5 +1,4 @@
 
-
 .Linkbutton-link-container, 
 .Linkbutton-edit-container, 
 .Linkbutton-delete-container,
@@ -47,7 +46,7 @@
     color: var(--white-color);
     
     &.Linkbutton-link-item{
-    color: var(--default-color);
+        color: var(--default-color);
     }
 }
 

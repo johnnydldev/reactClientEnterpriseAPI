@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NotFound from './not_found/NotFound.js';
 import LinkButton from './link_button/LinkButton.js';
+import NavItem from './nav_item/NavItem.js';
 import CardItem from './card_item/CardItem.js';
 import FormBranch from './form_item/FormItem.js';
 import FormEmployee from './form_item/FormItem.js';
@@ -9,11 +10,13 @@ import './SharedStylesComponents.css';
 
 
 function App() {
+
   return (
     <div className="App">
 
       <header className="App-header">
-        <LinkButton enable={true} text={'Home'} url={'/Home/AllViews'} />
+        
+        <NavItem />
 
       </header>
 
@@ -32,6 +35,7 @@ function App() {
     </div>
 
   );
+
 }
 
 export default App;

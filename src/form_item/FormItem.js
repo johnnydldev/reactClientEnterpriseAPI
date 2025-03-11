@@ -23,19 +23,19 @@ export default function FormItem({
     },
 
     buttons = [
-    {
-        enable: false,
-        text: 'Submit',
-        url: './NotFound',
-        action: 'submit'
-    },
-    {
-        enable: true,
-        text: 'Back home',
-        url: './NotFound',
-        action: 'back'
-    }    
-    ]
+        {
+            enable: false,
+            text: 'Submit',
+            url: './NotFound',
+            action: 'submit'
+        },
+        {
+            enable: true,
+            text: 'Back home',
+            url: './NotFound',
+            action: 'back'
+        }    
+        ]
 }){
 
     if(type.toLowerCase() === 'contact'){

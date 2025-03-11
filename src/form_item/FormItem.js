@@ -1,6 +1,5 @@
 import './FormItem.css';
 import '../SharedStylesComponents.css';
-import LinkButton from '../link_button/LinkButton.js'; 
 import InputItem from '../input_item/InputItem.js';
 import TextAreaItem from '../input_item/text_area_item/TextAreaItem.js';
 import ButtonGroup from '../buttons_group/ButtonGroup.js';
@@ -10,11 +9,11 @@ export default function FormItem({
     type = 'default',
 
     inputs = [
-    {
-        text: 'Some Input',
-        type: 'text',
-        color: 'default'
-    },
+        {
+            text: 'Some Input',
+            type: 'text',
+            color: 'default'
+        }
     ],
 
     textarea = {
@@ -35,7 +34,7 @@ export default function FormItem({
             url: './NotFound',
             action: 'back'
         }    
-        ]
+    ]
 }){
 
     if(type.toLowerCase() === 'contact'){

@@ -14,6 +14,7 @@ The color types to choose are the next follows:
     info(viridian)
     back(gray)
 ```
+More information of **LinkButton** on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button/LinkButton.js) 
 
 > [!IMPORTANT] 
 > This component has the next properties: alignType, and Buttons.

@@ -84,7 +84,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 > [!IMPORTANT]
-> About the **NavItem**, **FooterItem**, **GroupButton**, **CardItem**, **LabelItem**, 
+> About the **NavItem**, **FooterItem**, **ButtonGroup**, **CardItem**, **LabelItem**, 
 > **InputItem**, **TextAreaItem**, **FormItem**, and **LinkButton** components 
 
 > [!TIP]
@@ -92,7 +92,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ```javascript
     //Import the component with follow sentence above the main component with you've been work
-    import LabelItem from '../../label_item/LabelItem.js';
+    import LabelItem from 'src/label_item/LabelItem.js';
 
     //Add the component with next tag shown
     //The container of main component and LabelItem <> </>
@@ -116,7 +116,7 @@ More information about **LabelItem** on [https://github.com/johnnydldev/reactCli
 
 ```javascript
     //Import the component with follow sentence above the main component with you've been work
-    import InputItem from '../../input_item/InputItem.js';
+    import InputItem from 'src/input_item/InputItem.js';
 
     //Add the component with next tag shown
     //The container of main component and InputItem <> </>
@@ -140,7 +140,7 @@ More information about **InputItem** on [https://github.com/johnnydldev/reactCli
 
 ```javascript
     //Import the component with follow sentence above the main component with you've been work
-    import TextAreaItem from '../../input_item/text_area_item/TextAreaItem.js';
+    import TextAreaItem from 'src/input_item/text_area_item/TextAreaItem.js';
 
     //Add the component with next tag shown
     //The container of main component and TextAreaItem <> </>
@@ -164,7 +164,7 @@ More information about **TextAreaItem** on [https://github.com/johnnydldev/react
 
 ```javascript
     //Import the component with follow sentence above the main component with you've been work
-    import LinkButton from '../../link_button/LinkButton.js';
+    import LinkButton from 'src/link_button/LinkButton.js';
 
     //Add the component with next tag shown
     //The container of main component and LinkButton <> </>
@@ -189,7 +189,7 @@ More information about **LinkButton** on [https://github.com/johnnydldev/reactCl
 
 ```javascript
     //Import the component with follow sentence above the main component with you've been work
-    import CardItem from './card_item/CardItem.js';
+    import CardItem from 'src/card_item/CardItem.js';
 
     //Add the component with next tag shown
     //The container of main components <div> </div>
@@ -241,7 +241,7 @@ More information about **CardItem** on [https://github.com/johnnydldev/reactClie
 
 ```javascript
     //Import the component with follow sentence above the main component with you've been work
-    import FormItem from './Form_item/FormItem.js';
+    import FormItem from 'src/Form_item/FormItem.js';
 
     //Add the component with next tag shown
     //The container of main components <div> </div>
@@ -290,11 +290,11 @@ More information about **FormItem** on [https://github.com/johnnydldev/reactClie
 
 
 > [!TIP]
-> The implementation of **GroupButton** you can do it the follow way:
+> The implementation of **ButtonGroup** you can do it the follow way:
 
 ```javascript
     //Import the component with follow sentence above the main component with you've been work
-    import GroupButton from './buttons_group/GroupButton.js';
+    import ButtonGroup from 'src/buttons_group/ButtonGroup.js';
 
     //Add the component with next tag shown
     //The container of main components <div> </div>
@@ -302,12 +302,12 @@ More information about **FormItem** on [https://github.com/johnnydldev/reactClie
       <header className="App-header">
       </header>
 
-        //The GroupButton has the next properties: align, buttons (array) those use the map function 
-        // to create a GroupButtons with align vertical or horizontal according to parameters passed you use the alignType property. 
+        //The ButtonGroup has the next properties: align, buttons (array) those use the map function 
+        // to create a ButtonGroup with align vertical or horizontal according to parameters passed you use the alignType property. 
         // to create a LinkButton according to parameters passed to buttons property. 
         
         //If none parameters is passed, this use the default values. 
-        <GroupButton
+        <ButtonGroup
           alignType={'vertical'}
           
           buttons={
@@ -329,7 +329,7 @@ More information about **FormItem** on [https://github.com/johnnydldev/reactClie
     </div>
 
 ```
-More information about **GroupButton** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/buttons_group](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/buttons_group)
+More information about **ButtonGroup** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/buttons_group](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/buttons_group)
 
 
 
@@ -338,7 +338,7 @@ More information about **GroupButton** on [https://github.com/johnnydldev/reactC
 
 ```javascript
     //Import the component with follow sentence above the main component with you've been work
-    import NavItem from './nav_item/NavItem.js';
+    import NavItem from 'src/nav_item/NavItem.js';
 
     //Add the component with next tag shown
     //The container of main components is <nav> </nav>

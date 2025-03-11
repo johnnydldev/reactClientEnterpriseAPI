@@ -63,7 +63,7 @@
 
 More information of **InputItem** on next link:[InputItem JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/input_item) 
 
-More information of **TextAreaItem** on next link:[TextAreaItem JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/input_item/text_area) 
+More information of **TextAreaItem** on next link:[TextAreaItem JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/input_item/text_area_item) 
 
 More information of **LinkButton** on next link:[LinkButton JS component](https://github.com/johnnydldev/reactClientEnterpriseAPI/blob/main/src/link_button) 
 

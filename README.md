@@ -84,8 +84,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 > [!IMPORTANT]
-> About the **CardItem**, **LabelItem**, **InputItem**, **TextAreaItem**, **FormItem**,
-> and **LinkButton** components 
+> About the **NavItem**, **FooterItem**, **GroupButton**, **CardItem**, **LabelItem**, 
+> **InputItem**, **TextAreaItem**, **FormItem**, and **LinkButton** components 
 
 > [!TIP]
 > The implementation of **LabelItem** you can do it the follow way:
@@ -192,7 +192,7 @@ More information about **LinkButton** on [https://github.com/johnnydldev/reactCl
     import CardItem from './card_item/CardItem.js';
 
     //Add the component with next tag shown
-    //The container of main components and CardEmployee <div> </div>
+    //The container of main components <div> </div>
      <div className="App">
       <header className="App-header">
       </header>
@@ -203,31 +203,32 @@ More information about **LinkButton** on [https://github.com/johnnydldev/reactCl
         
         //If none parameters is passed, this use the default values. 
         <CardItem
-        title={'Marca'}
+          title={'Marca'}
 
-        labels={
-          [
+          labels={
+            [
+              {
+                title: 'Branch Name',
+                text: 'Coca cola'
+              }
+            ]
+          }  
+          
+          buttons={
+            [{
+              enable: true,
+              text: 'Edit',
+              url: './notFound',
+              action: 'edit'
+            },
             {
-              title: 'Branch Name',
-              text: 'Coca cola'
-            }
-          ]
-        }  
-        
-        buttons={
-          [{
-            enable: true,
-            text: 'Edit',
-            url: './notFound',
-            action: 'edit'
-          },
-          {
-            enable: false,
-            text: 'Delete',
-            url: './notFound',
-            action: 'delete'
-          }]
-        } />
+              enable: false,
+              text: 'Delete',
+              url: './notFound',
+              action: 'delete'
+            }]
+          } 
+        />
 
     </div>
 
@@ -243,7 +244,7 @@ More information about **CardItem** on [https://github.com/johnnydldev/reactClie
     import FormItem from './Form_item/FormItem.js';
 
     //Add the component with next tag shown
-    //The container of main components and CardEmployee <div> </div>
+    //The container of main components <div> </div>
      <div className="App">
       <header className="App-header">
       </header>
@@ -255,34 +256,129 @@ More information about **CardItem** on [https://github.com/johnnydldev/reactClie
         
         //If none parameters is passed, this use the default values. 
         <FormItem
-        title={'Marca'}
+          title={'Marca'}
 
-        inputs={
-          [
+          inputs={
+            [
+              {
+                title: 'Branch Name',
+                text: 'Coca cola'
+              }
+            ]
+          }  
+          
+          buttons={
+            [{
+              enable: true,
+              text: 'Edit',
+              url: './notFound',
+              action: 'edit'
+            },
             {
-              title: 'Branch Name',
-              text: 'Coca cola'
-            }
-          ]
-        }  
-        
-        buttons={
-          [{
-            enable: true,
-            text: 'Edit',
-            url: './notFound',
-            action: 'edit'
-          },
-          {
-            enable: false,
-            text: 'Delete',
-            url: './notFound',
-            action: 'delete'
-          }]
-        } />
+              enable: false,
+              text: 'Delete',
+              url: './notFound',
+              action: 'delete'
+            }]
+          } 
+        />
 
     </div>
 
 ```
 More information about **FormItem** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/form_item](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/form_item)
+
+
+> [!TIP]
+> The implementation of **GroupButton** you can do it the follow way:
+
+```javascript
+    //Import the component with follow sentence above the main component with you've been work
+    import GroupButton from './buttons_group/GroupButton.js';
+
+    //Add the component with next tag shown
+    //The container of main components <div> </div>
+     <div className="App">
+      <header className="App-header">
+      </header>
+
+        //The GroupButton has the next properties: align, buttons (array) those use the map function 
+        // to create a GroupButtons with align vertical or horizontal according to parameters passed you use the alignType property. 
+        // to create a LinkButton according to parameters passed to buttons property. 
+        
+        //If none parameters is passed, this use the default values. 
+        <GroupButton
+          alignType={'vertical'}
+          
+          buttons={
+            [{
+              enable: true,
+              text: 'Edit',
+              url: './notFound',
+              action: 'edit'
+            },
+            {
+              enable: false,
+              text: 'Delete',
+              url: './notFound',
+              action: 'delete'
+            }]
+          } 
+        />
+
+    </div>
+
+```
+More information about **GroupButton** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/buttons_group](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/buttons_group)
+
+
+
+> [!TIP]
+> The implementation of **NavItem** you can do it the follow way:
+
+```javascript
+    //Import the component with follow sentence above the main component with you've been work
+    import NavItem from './nav_item/NavItem.js';
+
+    //Add the component with next tag shown
+    //The container of main components is <nav> </nav>
+     <div className="App">
+      <header className="App-header">
+      </header>
+
+        //The NavItem has the next properties: align, buttons (array) those use the map function 
+        // to create a GroupButtons with align vertical or horizontal according to parameters passed you use the alignType property. 
+        // to create a LinkButton according to parameters passed to buttons property. 
+        
+        //If none parameters is passed, this use the default values. 
+        <NavItem
+          alignType={'vertical'}
+          
+          buttons={
+            [
+            {
+              enable: true,
+              text: 'Home',
+              url: '/'
+            },
+            {
+                enable: true,
+                text: 'About us',
+                url: '/about'
+            },
+            {
+                enable: true,
+                text: 'Contact us',
+                url: '/contact'
+            }
+            ]
+          } 
+        />
+
+    </div>
+
+```
+More information about **NavItem** on [https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/nav_item](https://github.com/johnnydldev/reactClientEnterpriseAPI/tree/main/src/nav_item)
+
+
 

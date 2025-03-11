@@ -19,7 +19,7 @@ export default function NavItem({
             enable: true,
             text: 'Contact us',
             url: '/contact'
-        },
+        }
     ]
 }){
 

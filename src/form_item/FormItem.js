@@ -3,6 +3,7 @@ import '../SharedStylesComponents.css';
 import LinkButton from '../link_button/LinkButton.js'; 
 import InputItem from '../input_item/InputItem.js';
 import TextAreaItem from '../input_item/text_area_item/TextAreaItem.js';
+import ButtonGroup from '../buttons_group/ButtonGroup.js';
 
 export default function FormItem({
     title = 'Form Title',
@@ -10,7 +11,7 @@ export default function FormItem({
 
     inputs = [
     {
-        text: 'Branch Name',
+        text: 'Some Input',
         type: 'text',
         color: 'default'
     },
@@ -52,11 +53,7 @@ export default function FormItem({
 
                     <TextAreaItem text={textarea.text} color={textarea.color}/>
     
-                    <div className="buttons-container horizontal-align">
-                        {buttons.map( item =>(
-                            <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
-                        ))}
-                    </div>
+                    <ButtonGroup buttons={buttons}/>
     
                 </form>
             </div>
@@ -74,11 +71,7 @@ export default function FormItem({
                     <InputItem text={item.text} type={item.type} color={item.color}/>
                 ))}
 
-                <div className="buttons-container horizontal-align">
-                    {buttons.map( item =>(
-                        <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
-                    ))}
-                </div>
+                <ButtonGroup buttons={buttons}/>
 
             </form>
         </div>

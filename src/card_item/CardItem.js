@@ -1,6 +1,7 @@
 import './CardItem.css';
 import LinkButton from '../link_button/LinkButton.js';
 import LabelItem from '../label_item/LabelItem.js';
+import ButtonGroup from '../buttons_group/ButtonGroup.js';
 
 export default function CardItem({
     title = 'Title Card',
@@ -11,18 +12,20 @@ export default function CardItem({
         color: 'default'
     }],
 
-    buttons = [{
-        enable: true,
-        text: 'Edit',
-        url: './notFound',
-        action: 'edit'
-      },
-      {
-        enable: false,
-        text: 'Delete',
-        url: './notFound',
-        action: 'delete'
-    }]
+    buttons = [
+        {
+            enable: true,
+            text: 'Edit',
+            url: './notFound',
+            action: 'edit'
+          },
+          {
+            enable: false,
+            text: 'Delete',
+            url: './notFound',
+            action: 'delete'
+        }
+    ]
 }){
 
 
@@ -34,11 +37,7 @@ export default function CardItem({
                 <LabelItem title={item.title} text={item.text} color={item.color}/>
             ))}
 
-            <div className="buttons-container horizontal-align">
-                {buttons.map((item) => (
-                    <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
-                ))}
-            </div>
+            <ButtonGroup buttons={buttons}/>
  
         </div>
     );

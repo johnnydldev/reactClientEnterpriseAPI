@@ -29,8 +29,7 @@ export default function NavItem({
             <ButtonGroup alignType={alignType} buttons={buttons} />   
         </nav>
 
-    );
-    
+    );  
 
 }
 

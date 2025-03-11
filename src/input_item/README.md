@@ -19,7 +19,8 @@ The color types to choose are the next follows:
 > This component has the next properties: text, type, and color.
 > The text property (string) is used to show the placeholder into input and heading label of inputselft.
 > The type property (string) is used to create an input type requested.
-> The color property (string) is used to assign a color according the color types shown above. 
+> The color property (string) is used to assign a color according the color types shown above.
+> If none value is passed to InputItem this will use the default properties. 
 
 > [!TIP]
 > ## To use the default InputItem you should only called the component the follow way:

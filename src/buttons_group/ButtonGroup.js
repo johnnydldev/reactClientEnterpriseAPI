@@ -14,8 +14,8 @@ export default function ButtonGroup({
             text: 'Edit',
             url: './notFound',
             action: 'edit'
-          },
-          {
+        },
+        {
             enable: false,
             text: 'Delete',
             url: './notFound',
@@ -29,18 +29,18 @@ export default function ButtonGroup({
     if(alignExists){
         return(
             <div className={"buttons-container "+alignType+"-align"}>
-                    {buttons.map((item) => (
-                        <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
-                    ))}
+                {buttons.map((item) => (
+                    <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
+                ))}
             </div>
         );
     }
 
     return(
         <div className="buttons-container horizontal-align">
-                {buttons.map((item) => (
-                    <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
-                ))}
+            {buttons.map((item) => (
+                <LinkButton enable={item.enable} text={item.text} url={item.url} action={item.action} />
+            ))}
         </div>
     );
 

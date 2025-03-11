@@ -6,12 +6,14 @@
 
 > [!IMPORTANT] 
 > This component has the next properties: title, type, textarea, inputs, and buttons.
-> The title property (string) is used to assign the **FormItem**'s title.
-> The type property (string) is used to assign the **FormItem**'s type (not necessary for default FormItem).
-> The textarea property (object) is used to assign the **FormItem**'s data **TextAreaItem** (not necessary for default FormItem).
-> The inputs property (array) is used to create an inputs group according the number objects passed into the array.
-> The buttons property (array) is used to create an buttons group of type requested.
-> If none value is passed to ButtonGroup this will use the default properties. 
+> ```
+>  The title property (string) is used to assign the **FormItem**'s title.
+>  The type property (string) is used to assign the **FormItem**'s type (not necessary for default FormItem).
+>  The textarea property (object) is used to assign the **FormItem**'s data **TextAreaItem** (not necessary for default FormItem).
+>  The inputs property (array) is used to create an inputs group according the number objects passed into the array.
+>  The buttons property (array) is used to create an buttons group of type requested.
+>  If none value is passed to ButtonGroup this will use the default properties. 
+>```
 
 > [!TIP]
 > ## To use the default CardItem you should only called the component the follow way:

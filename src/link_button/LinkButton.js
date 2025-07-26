@@ -6,7 +6,9 @@ function LinkButton({
     enable = false,
     text = 'some link',
     url = 'none', 
-    action = 'link'
+    action = 'link',
+    showText = true,
+    icon = ''
 }){
     
     action = action.toLowerCase();
@@ -18,7 +20,11 @@ function LinkButton({
         return(
             <>
                 <button className={"Linkbutton-"+action+"-container"} >
-                    <a className={"Linkbutton-"+action+"-item"} href={url}>{textToUpper}</a>
+                    
+                    <a className={"Linkbutton-"+action+"-item"} href={url}>
+                        <i className={icon} ></i>
+                        <span>{textToUpper}</span>
+                    </a>
                 </button>
             </>
         );
@@ -28,7 +34,10 @@ function LinkButton({
         return(
             <>
                 <button className={"Linkbutton-"+action+"-container"} disabled>
-                    <a className={"Linkbutton-"+action+"-item"} href={url}>{textToUpper}</a>
+                    <a className={"Linkbutton-"+action+"-item"} href={url}>
+                        <i className={icon} ></i>
+                        <span>{textToUpper}</span>
+                    </a>
                 </button>
             </>
         );
@@ -38,7 +47,10 @@ function LinkButton({
     return(
         <>
             <button className={"Linkbutton-link-container"} disabled>
-                <a className={"Linkbutton-link-item"} href={url}>{textToUpper}</a>
+                <a className={"Linkbutton-"+action+"-item"} href={url}>
+                    <i className={icon} ></i>
+                    <span>{textToUpper}</span>
+                </a>
             </button>
         </>
     );

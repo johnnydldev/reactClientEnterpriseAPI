@@ -8,7 +8,8 @@ export default function NavItem({
         {
             enable: true,
             text: 'Home',
-            url: '/'
+            url: '/',
+            icon: 'bi bi-house-fill'
         },
         {
             enable: true,
@@ -19,17 +20,18 @@ export default function NavItem({
             enable: true,
             text: 'Contact us',
             url: '/contact'
-        }
+        },
     ]
 }){
 
     return(
             
-        <nav className="nav-main-item">
+        <nav className="nav-main-item glass-morphysm">
             <ButtonGroup alignType={alignType} buttons={buttons} />   
         </nav>
 
-    );  
+    );
+    
 
 }
 

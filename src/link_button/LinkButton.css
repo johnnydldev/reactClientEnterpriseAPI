@@ -1,10 +1,12 @@
+ 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-.Linkbutton-link-container, 
+:is(.Linkbutton-link-container, 
 .Linkbutton-edit-container, 
 .Linkbutton-delete-container,
 .Linkbutton-submit-container,
 .Linkbutton-back-container,
-.Linkbutton-info-container{
+.Linkbutton-info-container){
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,6 +14,26 @@
     padding: 1px;
     background-color: var( --transparent-color);
     border: 0px;
+
+    &:is(.Linkbutton-edit-container, 
+    .Linkbutton-delete-container,
+    .Linkbutton-submit-container,
+    .Linkbutton-back-container,
+    .Linkbutton-info-container)>i{
+        color: var(--white-color);
+    }
+    
+}
+
+:is(.Linkbutton-link-container, 
+.Linkbutton-edit-container, 
+.Linkbutton-delete-container,
+.Linkbutton-submit-container,
+.Linkbutton-back-container,
+.Linkbutton-info-container):disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+
 }
 
 .Linkbutton-edit-container{
@@ -39,7 +61,7 @@
 .Linkbutton-delete-item,
 .Linkbutton-submit-item, 
 .Linkbutton-back-item,
-.Linkbutton-info-item{
+.Linkbutton-info-item {
     text-decoration: none;
     margin: 4px;
     font-weight: bold;
@@ -48,6 +70,11 @@
     &.Linkbutton-link-item{
         color: var(--default-color);
     }
+
+    &.hide-text-btn{
+        display: none;
+    }
+
 }
 
 :is(.Linkbutton-link-item, 
@@ -62,6 +89,12 @@
     &.Linkbutton-link-item{
         text-decoration-color: var(--purple-color);
     }
+
+    &.hide-text-btn{
+        display: none;
+    }
+
 }
+
 
 

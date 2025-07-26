@@ -16,15 +16,47 @@ function App() {
 
       <header className="App-header">
         
-        <NavItem />
+        <NavItem alignType=''/>
 
       </header>
 
        <section className="App-section">
+        <CardItem title='Empleado' 
 
-        <CardItem />
+        labels = {[{
+          title: 'Nombre',
+          text:'Jonathan Ivan',
+          color: 'purple'
+        },
+        {
+          title: 'Apellidos',
+          text:'Delgado López',
+          color: 'green'
+        },
+        {
+          title: 'Puesto',
+          text:'Desarrollador',
+          color: 'kabul'
+        }
+        ]}
+        />
 
-        <FormBranch />
+        <FormEmployee title='Envia Comentarios' type='contact' inputs={
+        [{
+          text: 'Asunto',
+          type: 'text',
+          color: 'green'
+        },]
+        }
+        
+        
+        textarea = {
+          {
+            text: "Comentarios",
+            color: 'purple'
+          }
+        }
+        />
 
        </section>
 

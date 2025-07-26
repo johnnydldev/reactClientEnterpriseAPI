@@ -1,5 +1,5 @@
 
-const arrayColors = ['default', 'red', 'green', 'purple', 'peach'];
+const arrayColors = ['default', 'red', 'green', 'purple', 'peach', 'kabul', 'gray'];
 
 const arrayActions = ['link', 'submit', 'edit', 'delete', 'info', 'back'];
 
